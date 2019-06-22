@@ -2,9 +2,21 @@
     <head>
         <title>
             HELLO WORLD!:)
-        </title>   
+        </title> 
+        <script>
+            function test(message) {
+                alert(message)    
+            }
+            
+            function onload(){
+                const redbutton = document.getElementById("redbutton") 
+                redbutton.onclick = function(){
+                    test("MEOW (IF YOU DARE):)")     
+                }
+            }
+        </script>  
     </head> 
-    <body style="background-color: hotpink">
+    <body onload="onload()" style="background-color: rgb(233, 20, 126)">
         <h1 style="color:turquoise">
             HELLO WORLD!:)
         </h1>
@@ -12,6 +24,7 @@
         <p style="color: black; border: 1px solid black; background-color: lawngreen">
             This is my first coding project and I feel like:
         </p>
+        <button id="redbutton">CLICK MEHHH</button>
         <span>
             <img 
                 width="400"
