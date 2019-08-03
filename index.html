@@ -8,23 +8,26 @@
                 alert(message)    
             }
             
-            function onload(){
+            function onload() {
                 const redbutton = document.getElementById("redbutton") 
-                redbutton.onclick = function(){
+                redbutton.onclick = function() {
                     test("MEOW (IF YOU DARE):)")     
                 }
             }
-        </script>  
-        <SCRIPT LANGUAGE= "javascript">
 
-            setTimeout("document.bgColor='white'", 1000)
-            setTimeout("document.bgColor='lightpink'", 1500)
-            setTimeout("document.bgColor = 'pink'", 2000)
-            setTimeout("document.bgColor =  'deeppink'", 2500)
-            setTimeout("document.bgColor = 'red'", 3000)
-            setTimeout("document.bgColor = 'tomato'", 3500)
-            setTimeout("document.bgColor = 'black'", 4000)
-        </SCRIPT>
+            function delayBgColor(color, delay) {
+                setTimeout(function() {
+                    document.bgColor = color;
+                },delay)
+            }
+            delayBgColor('white', 1000)
+            delayBgColor('lightpink', 1500)
+            delayBgColor('pink', 2000)
+            delayBgColor('deeppink', 2500)
+            delayBgColor('red', 3000)
+            delayBgColor('tomato', 3500)
+            delayBgColor('black', 4000)
+        </script>  
     </head> 
     <body onload="onload()" >
     
